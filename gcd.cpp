@@ -3,8 +3,11 @@ using namespace std;
 
 // Recursive function to find GCD of two numbers
 int gcd(int a, int b) {
+if (b == 0 ) {
+return a;
+}
     // TODO: complete the function as per instructions
-    
+return gcd(b, a % b);    
 }
 
 int main() {
@@ -15,4 +18,3 @@ int main() {
 
     return 0;
 }
-
